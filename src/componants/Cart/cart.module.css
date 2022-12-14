@@ -1,0 +1,22 @@
+.cartTable {
+    background-color: red !important;
+}
+
+@media (max-width:768px) {
+    .cartTable {
+        max-width: 100%;
+    }
+    .cartTable button {
+        padding: 5px !important;
+    }
+    .cartTable thead tr th:nth-child(1),
+    .cartTable thead tr th:nth-child(3),
+    .cartTable thead tr th:nth-child(6) {
+        display: none;
+    }
+    .cartTable tbody tr td:nth-child(1),
+    .cartTable tbody tr td:nth-child(3),
+    .cartTable tbody tr td:nth-child(6) {
+        display: none;
+    }
+}

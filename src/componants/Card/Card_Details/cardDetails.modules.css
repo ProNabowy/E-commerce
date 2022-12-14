@@ -1,0 +1,19 @@
+.card-details {
+    background: #1f2334;
+    min-height: 65vh;
+}
+.card-details-container img {
+    width: 100%;
+    min-height: 530px;
+    max-height: 530px;
+    border-radius: 10px;
+}
+.card-details-container .text {
+    height: 530px;
+}
+.card-details-container .text h3 {
+    color: #6767ed;
+}
+.carousel-indicators {
+    display: none;
+}

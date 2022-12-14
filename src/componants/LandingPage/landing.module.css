@@ -1,0 +1,7 @@
+
+.carosuel_wrapper {
+    height: calc(100vh - 62px)  !important;
+}
+.carosuel_wrapper img {
+    height: calc(100vh - 62px)  !important;
+}

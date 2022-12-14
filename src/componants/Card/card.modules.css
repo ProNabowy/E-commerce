@@ -1,0 +1,43 @@
+
+.men-box .image {
+    transition: var(--main-transition) all ease;
+    cursor: pointer;
+}
+.men-box .image:hover {
+    transform: translateY(-8px) scale(1.1);
+}
+.men-box .image img {
+    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+}
+.men-box .info .price {
+    margin: 10px auto;
+}
+
+.men-box .info .price h4 {
+    color: #222;
+}
+.info .size::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 1px;
+    border-top: 1px dashed #797e89;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.info .size-items li {
+    list-style: none;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid #797e89;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.info .size-items li:hover {
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+    transition: var(--main-transition);
+}

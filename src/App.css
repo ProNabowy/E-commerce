@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none ;
+}
+:root {
+    --main-transition: 0.5s;
+}
+body {
+    overflow-x: hidden !important;
+}
+.carousel {
+    max-width: 100% !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    display: none !important;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+img {
+    max-width: 100% !important;
+}
+.carousel-indicators {
+    display: none;
+}
+.swal2-confirm {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 
+    Animation
+*/
