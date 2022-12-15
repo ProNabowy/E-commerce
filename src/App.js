@@ -50,13 +50,13 @@ function App()
             <Footer box_Shadow={"0  0  3px  5px #2e3344"} />
           </Fragment>
         } ></Route>
-        <Route path='about' element={
+        <Route path='/about' element={
           <Fragment>
             <About />
             <Footer />
           </Fragment>
         } ></Route>
-        <Route path='/*' element={
+        <Route path='*' element={
           <Fragment>
             <NotFound />
             <Footer box_Shadow={"0  0  3px  5px #2e3344"} />
