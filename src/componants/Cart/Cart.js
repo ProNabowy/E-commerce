@@ -5,7 +5,7 @@ import { clearCart, delteFromCart } from '../../slices/cart_slice';
 import styles from "./cart.module.css";
 
 
-function Chart()
+function Cart()
 {
     const carts_data = useSelector(state => state.cart);
     const dispatch = useDispatch();
@@ -63,4 +63,4 @@ function Chart()
     );
 }
 
-export default Chart;
+export default Cart;

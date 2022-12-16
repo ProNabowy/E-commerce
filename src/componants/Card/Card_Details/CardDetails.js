@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getDataFromAPI } from "../../../slices/card_slice";
 import { useParams } from "react-router-dom"
@@ -13,6 +13,7 @@ const CardDetails = () =>
     const data = useSelector(state => state.card);
     const dispatch = useDispatch();
     // Call API to get data
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => { dispatch(getDataFromAPI()) }, []);
 
     const every_cards = [...data.jacket, ...data.sweatshirts, ...data["t-shirt"], ...data.women_jacket, ...data.women_sweatshirts, ...data.dress];

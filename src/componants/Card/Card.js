@@ -1,7 +1,6 @@
-import { Button } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { delteFromCart, find_card_from_cart, set_card_to_chart } from "../../slices/cart_slice";
+import { delteFromCart, set_card_to_chart } from "../../slices/cart_slice";
 
 import "./card.modules.css";
 

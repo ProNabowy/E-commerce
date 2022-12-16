@@ -10,7 +10,8 @@ import { Navigation } from "swiper";
 import { Container, Row } from "react-bootstrap";
 import JacketUi from "../catogries/Jacket_Ui";
 import Sweatshirts from "../catogries/Sweatshirts";
-import T_Shirts from "../catogries/TShirts";
+// This is The Women Dress 
+import Shirts from "../catogries/TShirts";
 import { useDispatch, useSelector } from "react-redux";
 import { getDataFromAPI } from "../../slices/card_slice";
 import { useEffect } from "react";
@@ -25,6 +26,7 @@ export default function Women()
     const dispatch = useDispatch();
 
     // Call API to get data
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => { dispatch(getDataFromAPI()) }, []);
     return (
         <Container className="pt-3 mt-2 pb-5">
@@ -58,12 +60,12 @@ export default function Women()
             <Swiper navigation={false} modules={[Navigation]} className="mySwiper">
                 <SwiperSlide className="mb-5">
                     <Row>
-                        <T_Shirts data={dress} gendar={"women"} check={true} />
+                        <Shirts data={dress} gendar={"women"} check={true} />
                     </Row>
                 </SwiperSlide>
                 <SwiperSlide className="mb-5">
                     <Row>
-                        <T_Shirts data={dress} gendar={"women"} check={false} />
+                        <Shirts data={dress} gendar={"women"} check={false} />
                     </Row>
                 </SwiperSlide>
             </Swiper>
